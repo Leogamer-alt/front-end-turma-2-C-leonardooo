@@ -3,16 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
+    <title>Exemplo Completo</title>
+    <!-- Importando fonte externa do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilizando a página com a fonte importada */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo para a imagem flutuante */
+        .image-float {
+            float: left;
+            margin-right: 15px;
+            opacity: 0.8; /* Transparência da imagem */
+        }
+
+        /* Estilo para aplicar gradient no background */
+        .gradient-background {
+            background: linear-gradient(45deg, #ff8c00, #ff0080); /* Exemplo com cores vibrantes */
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para pseudo-elemento */
+        .pseudo-elemento::before {
+            content: "👉 ";
+            font-size: 24px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <h1>Trabalhinho</h1>
-    <h1>Leonardo Prestes dos Santos</h1>
-    <p>Idade: [15]</p>
-    <p>Profissão: [ Não tenho]</p>
-    <p>Hobby: [Não tenho Hobby]</p>
-    <p>Resumo: [ meu nome e leonardo tenho 15 anos gosto de jogar muito video game e namoro.]</p>
-    <img src="minions.jpeg" alt="Foto de Leonardo">
-    
+
+    <div class="gradient-background">
+        <h1>Bem-vindo ao Exemplo Completo</h1>
+    </div>
+
+    <!-- Exemplo de imagem com float e opacity -->
+    <img src="https://via.placeholder.com/150" alt="Imagem Exemplo" class="image-float">
+
+    <p>
+        Esta é uma página de exemplo que demonstra o uso de float para posicionar imagens ao lado de textos,
+        fontes externas, gradient, pseudo-elementos, incorporação de mapas do Google e vídeos do YouTube.
+    </p>
+
+    <!-- Incorporação de mapa do Google usando iframe -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509372!2d144.95543131531884!3d-37.81720997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577133fa9eb9e32!2sMelbourne%2C%20VIC%2C%20Australia!5e0!3m2!1sen!2sbr!4v1618301264978!5m2!1sen!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <br><br>
+
+    <!-- Incorporação de vídeo do YouTube usando iframe -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+    <br><br>
+
+    <!-- Exemplo de pseudo-elemento -->
+    <p class="pseudo-elemento">Este texto tem um pseudo-elemento antes dele.</p>
+
 </body>
 </html>
